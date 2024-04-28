@@ -3,14 +3,15 @@ import useClearPoint from "../hooks/useClearPoint"
 
 const Home = () => {
 
-    const {isLoading, getClearPoints, error, clearPoint} = useClearPoint();
+  const { isLoading, getClearPoints, error, clearPoint } = useClearPoint();
 
-    useEffect(() => {
-        getClearPoints()
-    }, []);
+  useEffect(() => {
+    getClearPoints()
+  }, []);
+
   return (
     <div>
-      
+
     </div>
   )
 }

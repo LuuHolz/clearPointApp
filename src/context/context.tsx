@@ -4,12 +4,12 @@ import { reducer } from "./reducer";
 
 export const MyContext = createContext();
 
-export const MyContextProvider = ({children}) => {
+export const MyContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
-        <MyContext.Provider value={{state, dispatch}}>
-        {children}
+        <MyContext.Provider value={{ state, dispatch }}>
+            {children}
         </MyContext.Provider>
     )
 }
