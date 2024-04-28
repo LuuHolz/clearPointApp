@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import useClearPoint from "../hooks/useClearPoint"
+import Navbar from "../components/Navbar"
 
 const Home = () => {
 
@@ -10,9 +11,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-
-    </div>
+    <>
+      <Navbar/>
+    </>
   )
 }
 
