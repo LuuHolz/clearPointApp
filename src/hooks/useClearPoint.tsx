@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import { DataAPI } from '../types/ClearPints.type'
 
 const useClearPoint = () => {
     const [isLoading, setIsLoading] = useState(false);
-    const [clearPoint, setClearPoint] = useState([]);
-    const [error, setError] = useState('');
+    const [clearPoint, setClearPoint] = useState<[] | DataAPI>([]);
+    const [error, setError] = useState<string>('');
 
     const getClearPoints = async() =>{
         setIsLoading(true);
@@ -13,7 +14,7 @@ const useClearPoint = () => {
             const data = await response.json();
             setClearPoint(data);
         } catch(error){
-            setError(error);
+            setError(error as string);
         }finally{
             setIsLoading(false);
         }
