@@ -83,3 +83,26 @@
     color: #333;
   }
 }
+
+.principalContainer{
+    width: 80%;
+    max-Width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .mapContainer{
+        height: 100%;
+        width: 100%;
+    }
+
+    .secondContainer{
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
