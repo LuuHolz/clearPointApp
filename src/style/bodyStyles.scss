@@ -1,0 +1,85 @@
+.containerBodyHome {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerCardRecycling {
+    width: 80%; 
+    max-width: 756px; 
+    display: flex;
+    border: 1px solid #eee; 
+    border-radius: 15px;
+    box-sizing: border-box; /* Importante para que el borde se incluya en el tamaño del contenedor */
+
+  .imgRecycling {
+    height: 350px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .centerBox {
+    border-color: grey;
+  }
+
+  .textCardWeAre {
+    font-size: 40px;
+    line-height: 45px;
+    color: #024731;
+    height: 286px;
+    width: 225px;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+  }
+
+  .textCardView {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(223, 177, 99);
+    margin: 15px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .rightBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid #eee;
+    padding: 15px 0px 15px 35px;
+  }
+
+  .natureLogoCard {
+    height: 64px;
+    width: 64px;
+  }
+
+  .text25 {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(223, 177, 99);
+    margin: 50px 0 30px;
+  }
+
+  .textCardYears {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+  }
+
+  .textCardExperience {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+  }
+}
