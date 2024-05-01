@@ -18,8 +18,8 @@ const Home = () => {
         <Navbar />
         <div className="containerBodyHome">
           <Body />
+          <Map/>
         </div>
-        <Map/>
       </div>
     </>
   )

@@ -1,10 +1,17 @@
 import Recycling from "../assets/reciclaje.jpg"
 import naturesIocn from "../assets/nature.png"
+import plant from "../assets/plants.jpg"
 
 const BodyImages = () => {
   return (
     <>
+      <div className="containerimgPlant">
+        <img src={plant} alt="" className="imgPlant" />
+      </div>
+
       <div className="containerCardRecycling">
+        {/* CARD */}
+
         <div>
           <img src={Recycling} alt="Recycling" className="imgRecycling" />
         </div>
