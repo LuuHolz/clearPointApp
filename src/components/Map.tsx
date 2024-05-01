@@ -2,7 +2,9 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Map = ({ containers }) => {
 
-  const dataArray = Array.isArray(containers) ? containers.slice(0, 15) : [];
+//                                                                        containers.data es un array
+  const dataArray = Array.isArray(containers) ? containers.slice(0, 30) : (containers.data ? containers.data.slice(0, 30) : []);
+  console.log(dataArray, "holaaaa");
 
   return (
     <div className='principalContainer'>
