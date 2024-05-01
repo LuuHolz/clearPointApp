@@ -19,7 +19,8 @@ const Home = () => {
         <div className="containerBodyHome">
           <Body />
 
-            <Map containers={clearPoint}/> 
+          <Map containers={clearPoint} /> 
+ 
    
         </div>
       </div>

@@ -1,28 +1,24 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { useState } from 'react';
 
 const Map = ({ containers }) => {
-  const [state, setState] = useState({
-    lat: 51.505,
-    lng: -0.09,
-    zoom: 13,
-  });
 
-  const position = [state.lat, state.lng];
+  const dataArray = Array.isArray(containers) ? containers.slice(0, 15) : [];
 
   return (
     <div className='principalContainer'>
       <div>
-        <MapContainer className="leaflet-container" center={position} zoom={state.zoom}>
+        <MapContainer className="leaflet-container" center={[40, -4]} zoom={6}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
           />
-          <Marker position={position}>
-            <Popup>
-              Un bonito popup de CSS3. <br /> Fácilmente personalizable.
-            </Popup>
-          </Marker>
+          {dataArray.map((container, index) => (
+            <Marker key={index} position={[container.latitud, container.longitud]}>
+              <Popup>
+                Aquí hay un contenedor
+              </Popup>
+            </Marker>
+          ))}
         </MapContainer>
       </div>
     </div>
@@ -30,4 +26,3 @@ const Map = ({ containers }) => {
 };
 
 export default Map;
-
