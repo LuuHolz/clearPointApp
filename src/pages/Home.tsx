@@ -18,7 +18,9 @@ const Home = () => {
         <Navbar />
         <div className="containerBodyHome">
           <Body />
-          <Map/>
+
+            <Map containers={clearPoint}/> 
+   
         </div>
       </div>
     </>

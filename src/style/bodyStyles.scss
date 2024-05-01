@@ -7,6 +7,7 @@
   flex-direction: column;
 }
 
+// IMG SUPERIOR
 .containerimgPlant{
   height: 100%;
   width: 100%;
@@ -17,16 +18,19 @@
     left: 0;
     width: 100%;
     height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
   }
 }
 
+// CARD RECYCLING
 
 .containerCardRecycling {
   width: 80%;
   max-width: 756px;
   display: flex;
   border-radius: 15px;
-  box-sizing: border-box; /* Importante para que el borde se incluya en el tamaño del contenedor */
+  box-sizing: border-box; 
   background-color: white;
   position: absolute;
   bottom: 500px;
@@ -107,24 +111,16 @@
   }
 }
 
+// MAP
+
 .principalContainer {
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
 
-  .mapContainer {
-    height: 100%;
-    width: 100%;
-  }
 
-  .secondContainer {
+  .leaflet-container {
+    border: 1px solid grey;
     height: 400px;
-    width: 100%;
-    overflow: hidden;
+    width: 800px;
+    margin-bottom: 50px;
   }
+  
 }
