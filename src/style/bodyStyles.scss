@@ -9,7 +9,7 @@
 
 // IMG SUPERIOR
 .containerimgPlant{
-  height: 50%;
+  height: 30%;
   width: 100%;
   margin-bottom: 300px;
 
@@ -19,8 +19,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
+    opacity: 0.5;
+    //sirve para cortar la imagen 
+    object-fit: cover; 
   }
 }
 
@@ -34,7 +36,7 @@
   box-sizing: border-box; 
   background-color: white;
   position: absolute;
-  bottom: 300px;
+  bottom: 550px;
   border: 1px solid #eee;
 
   .imgRecycling {
